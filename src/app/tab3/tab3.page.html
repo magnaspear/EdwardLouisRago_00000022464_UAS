@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-list style="display:flex; justify-content: center;">
+          <ion-item>
+            <ion-avatar style="block-size: 200px; width: 200px;">
+              <img src={{profilePic}} (click)="getPicture('camera')" alt="">
+            </ion-avatar>
+          </ion-item>
+        </ion-list>
+        <ion-list style="display:flex; justify-content: center;" >
+          <h2>{{userName}}</h2>
+        </ion-list>
+        <ion-list style="display:flex; justify-content: center;">
+          <h3>{{email}}</h3>
+        </ion-list>
+        <ion-list style="display:flex; justify-content: center;">
+          <h4>Mata kuliah mobile cross platform mantap. <br>
+          Setiap hari senin denger podcast.<br>
+          Terima kasih aslab.</h4>
+        </ion-list>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+  <input type="file" *ngIf="isDesktop" #filePicker (change)="OnFileChoose($event)"/>
+  <ion-button (click)="logout()" style="margin-left: 40%; margin-right: 40%;" expand="full" color="danger">Logout</ion-button>
+  <p style="color:black;">Crossplatform Mantap</p>
+  
+</ion-content>

@@ -1,7 +1,5 @@
 {
-  "name": "EdwardLouisRago_00000022464_UAS",
-  "integrations": {
-    "capacitor": {}
-  },
+  "name": "Mobile2_22203",
+  "integrations": {},
   "type": "angular"
 }
